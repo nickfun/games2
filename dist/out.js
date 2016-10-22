@@ -48,11 +48,29 @@
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(34);
 
-	ReactDOM.render(React.createElement(
-	  'h1',
-	  null,
-	  'Hello, world!'
-	), document.getElementById('app-root'));
+	const App = props => {
+	    return React.createElement(
+	        'div',
+	        null,
+	        React.createElement(
+	            'h1',
+	            null,
+	            'ES6 & React Games App v2'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            '\xA9 Nick Funnell'
+	        ),
+	        React.createElement(
+	            'p',
+	            null,
+	            'Insert Games Here'
+	        )
+	    );
+	};
+
+	ReactDOM.render(React.createElement(App, null), document.getElementById('app-root'));
 
 /***/ },
 /* 1 */

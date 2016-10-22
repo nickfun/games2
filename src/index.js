@@ -2,7 +2,12 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 
+
+const App = (props) => {
+    return (<div><h1>ES6 & React Games App v2</h1><p>&copy; Nick Funnell</p><p>Insert Games Here</p></div>);
+}
+
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
-  document.getElementById('app-root')
+    <App />,
+    document.getElementById('app-root')
 );
